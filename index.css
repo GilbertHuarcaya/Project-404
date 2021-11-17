@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+
+nav {
+  width: auto;
+  height: 104px;
+}
+
+nav h2 {
+  font-family: "Inconsolata", Lato;
+  font-size: 24px;
+  margin: 40px 0 0 77px;
+}
+
+/* aviso */
+
+.aviso {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.texto {
+  margin-left: 119px;
+  display: flex;
+  flex-direction: column;
+  max-width: 586px;
+}
+
+.aviso .logo img {
+  max-width: 539px;
+  max-height: 447px;
+}
+
+.texto h1 {
+  font-family: "Space Mono", Lato;
+  font-size: 64px;
+  font-weight: bold;
+  line-height: 95px;
+  letter-spacing: -0.035em;
+  margin-bottom: 36px;
+}
+
+.texto > p {
+  font-family: "Space Mono", Lato;
+  font-size: 24px;
+  margin: 0px;
+  max-width: 381px;
+  height: 108px;
+  line-height: 36px;
+  letter-spacing: -0.035em;
+  margin-bottom: 64px;
+}
+
+button {
+  background-color: black;
+  color: white;
+  width: 216px;
+  height: 68px;
+  font-size: 14px;
+  font-family: "Space Mono", Lato;
+}
+
+/* Footer */
+
+footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  min-height: 30px;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  nav h2 {
+    margin: 20px 0 0 24px;
+  }
+  .texto h1 {
+    font-size: 48px;
+    line-height: 71px;
+    letter-spacing: -0.035em;
+    margin-bottom: 30px;
+  }
+  .texto > p {
+    font-size: 18px;
+  }
+  .aviso .logo img {
+    max-width: 286px;
+  }
+  .texto {
+    margin-left: 24px;
+  }
+}
